@@ -101,7 +101,7 @@ signal은 반드시 호재/악재/중립 중 하나."""
     print("Claude API 분석 중...")
     response = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=2000,
+        max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )
 
